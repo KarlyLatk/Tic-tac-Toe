@@ -2,9 +2,16 @@ package org.example;
 
 public class TicTacToe {
     public String[] board = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+    public String p1Mark;
+    public String p2Mark;
+
+    public TicTacToe() {
+        p1Mark = "X";
+        p2Mark = "O";
+    }
 
     public boolean move (String player, String space) {
-        if(space.equalsIgnoreCase("X") || space.equalsIgnoreCase("O")) {
+        if(space.equalsIgnoreCase(p1Mark) || space.equalsIgnoreCase(p2Mark)) {
             return false;
         }
         for(int i = 0; i < board.length; i++) {
@@ -39,7 +46,7 @@ public class TicTacToe {
 
         //Check for open spaces
         for(int i = 0; i < board.length; i++) {
-            if(!board[i].equalsIgnoreCase("X") && !board[i].equalsIgnoreCase("O")) {
+            if(!board[i].equalsIgnoreCase(p1Mark) && !board[i].equalsIgnoreCase(p2Mark)) {
                 return "";
             }
         }
