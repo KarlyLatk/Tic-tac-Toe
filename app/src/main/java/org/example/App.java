@@ -15,6 +15,7 @@ public class App {
 
           do{
               System.out.println(game.printBoard());
+              System.out.println("It is " + player + "'s turn");
               System.out.print("What is your move? ");
               String move = in.nextLine();
               // Check if move is valid
