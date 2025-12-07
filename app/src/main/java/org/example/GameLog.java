@@ -23,7 +23,7 @@ public class GameLog {
     }
 
     public String printLog(){
-        return "The current log is: \n\n" + "Player " + p1Mark + " Wins\t" + p1Wins +  "\nPlayer " + p2Mark + " Wins\t" + p2Wins + "\nTies\t\t\t" + draws + "\n";
+        return "The current log is: \n\n" + "Player " + p1Mark + " Wins:\t" + p1Wins +  "\nPlayer " + p2Mark + " Wins:\t" + p2Wins + "\nTies:\t" + draws + "\n";
     }
 
     public void writeLog(){

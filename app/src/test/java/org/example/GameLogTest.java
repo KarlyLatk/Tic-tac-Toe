@@ -14,6 +14,6 @@ public class GameLogTest {
     @Test
     public void testPrintLog(){
         gameLog.p1Wins++;
-        assertEquals(gameLog.printLog(), "The current log is: \n\nPlayer X Wins\t1\nPlayer O Wins\t0\nTies\t\t\t0\n");
+        assertEquals(gameLog.printLog(), "The current log is: \n\nPlayer X Wins:\t1\nPlayer O Wins:\t0\nTies:\t0\n");
     }
 }
